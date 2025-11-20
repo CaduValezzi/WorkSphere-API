@@ -2,12 +2,10 @@ package br.com.worksphere.usuario.vo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.Email;
 
 @Embeddable
 public class Email {
-
-    @Email
+    @jakarta.validation.constraints.Email
     @Column(name = "email", nullable = false, unique = true)
     private String valor;
 
